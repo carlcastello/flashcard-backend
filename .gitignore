@@ -16,6 +16,10 @@ _mailinglist
 .idea/
 docs/_build/
 
+# Virtual Env 
+venv/
+venv*
+
 # Coverage reports
 htmlcov/
 .coverage
