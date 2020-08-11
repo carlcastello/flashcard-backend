@@ -11,14 +11,11 @@ git-init:
 init:
 	export FLASK_APP=${APP_NAME} 
 
-init-windows:
-	set FLASK_APP=${APP_NAME}
-
 test:
 	python3 -m unittest discover -v
 
 install:
-	pip install -r requirements/${environment}.txt
+	pipenv install --dev && pipenv shell
 
 migrate:
 	flask db migrate
